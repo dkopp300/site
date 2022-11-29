@@ -1,0 +1,153 @@
+<html>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<html color-mode="light">
+
+</html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="main.js">
+    <link rel="javascript" href="game.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="main.js"></script>
+    <script src="game.js"></script>
+
+
+</head>
+
+<body>
+
+    <dialog open class="helpPopup" id="helpPopup">
+
+        <button type="closePopup" class="closePopup" onclick="closeDialog()">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec tellus ipsum, faucibus eget justo ac, ultrices sollicitudin urna. Vivamus placerat ipsum orci, ut
+            rhoncus tellus iaculis vel.
+            Sed eu nulla quam. Integer ut sollicitudin arcu. Morbi lacinia enim quis lorem dictum dictum.
+            Sed vel malesuada odio. Etiam imperdiet varius urna, vel mollis tellus.
+            Aenean massa mauris, placerat quis gravida eu, luctus ullamcorper eros. In hac habitasse platea
+            dictumst.
+        </p>
+    </dialog>
+
+    <div class="settingsPopup">
+
+    </div>
+
+    <div class="statsPopup">
+
+    </div>
+
+    <div class="navbar">
+
+
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+        <div class="logoContainer">
+            <h2>PROJECT</h2>
+        </div>
+
+        <div class="listContainer">
+
+            <button class="helpButton" onclick="showDialog()">
+                <ion-icon name="help-circle-outline"></ion-icon>
+            </button>
+            <button type="statsButton" class="statsButton">
+                <ion-icon name="stats-chart-outline"></ion-icon>
+            </button>
+            <button type="settingsButton" class="settingsButton">
+                <ion-icon name="settings-outline"></ion-icon>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="sidebarLinks">
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="resources.html">RESOURCES</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="contentContainer">
+            <div class="imageContainer">
+
+                <script>
+                    document.write("<div id = flagImage><img src = " + link[random_num].flag + " alt = Flag width = 50%></div>");
+                </script>
+
+            </div>
+
+
+            <div class="guessEnter">
+                <form onsubmit="checkGuess()">
+
+                    <input type="text" id="guess" placeholder="Make a guess...">
+
+                    <div class="submitButton">
+                        <input type="submit" onclick="checkGuess();">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="footerBox">
+            <p2>By Drew Kopp 2022</p2>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
